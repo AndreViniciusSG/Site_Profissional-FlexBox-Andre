@@ -3,7 +3,7 @@
 /* Formatação do Body */	
 body {
 	font-family: Arial; sans-serif;
-	background-color: green;
+	background-color: rgba(29, 15, 54, 1);
 	color: rgba(0, 0, 0, 1);
 	padding: 0;
 	width: 100vw;
@@ -18,22 +18,25 @@ body {
 	align-items: center;
 	width:100vw;
 	height: 100vh;
+	margin: 0;
 }
 
 .child1{
 	width:100vw;
 	height: 100vh;
-	background-color: red;
+	background-color: rgba(29, 15, 54, 1);
 }
 
 .child2{	
 	width:100vw;
 	height: 100vh;
-	background-color: blue;
+	background-image: url(../fotossite/principal.png);
+	background-repeat: no repeat;
+	background-size: cover;
+	background-color: white;
 	justify-content: center;
 	align-items: center;
 }
-
 
 /* Formatação do Menu */
 nav#menu {
@@ -48,18 +51,21 @@ nav#menu h1{
 /* Formatação da Posição na página da Lista do Menu */
 nav#menu ul{
 	list-style: none;
-	position: absolute;
-	top: 10px;
-	left: 200px;
+	position: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	color: white;
-	font-size: 15px;	
+	font-size: 20px;	
+	font-weight: bold;
 }
 
 /* Formatação da cor e forma da Lista do Menu */
 nav#menu li{
 	display: inline-block;/* Lista em forma de fila*/
 	background-color: white;
-	padding: 5px;
+	padding: 25px;
 	margin: 2px;
 	transition: background-color 1s;
 	background-color: transparent;
@@ -85,10 +91,10 @@ nav#menu a:hover{
 
 /* Formatação Logo do Site*/
 div#logomenor img{
-	position: relative;
-	top: 10px;
-	margin: 5px;
-	padding-bottom: 10px;
+	position: absolute;
+	margin: auto;
+	top: 5px;
+	padding: 10px;
 	width: 200px;
 	height: 50px;
 }
@@ -116,11 +122,12 @@ div#logomenor img{
 	color: rgba(51, 195, 229, 1);
 	text-transform: uppercase;
 	position: relative;
-	background-color: white;
+	background-color: transparent;
+	margin: 0;
 	margin-bottom: 0;
 	padding: 5px;
 	width: 100vw;
-	top: 0;
+	top: 5%;
 	
 }
 
@@ -132,9 +139,10 @@ div#logomenor img{
 	color: white;
 	position: relative;
 	padding: 5px;
-	background-color: red;
+	margin: 5px;
+	background-color: transparent;
 	margin-bottom: 0;
-	top: 0;
+	top: 4%;
 	width: 100vw;
 }
 
@@ -144,29 +152,32 @@ div#logomenor img{
 	font-size: 70px;
 	text-align: center;
 	color: rgba(51, 195, 229, 1);
-	background-color: black;
+	background-color: transparent;
 	position: relative;
+	margin: 5px;
 	margin-bottom: 0;
-	padding: 0;
-	top: 0;
+	padding: 5px;
+	top: 3%;
 	width: 100vw;
 }
 
 /* Formatação do a da Div Principal*/
 .child2 a{
+	display: block;
+	position: relative;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
 	margin: auto;
-	display: block;
 	font-family: Calibri; sans-serif;
-	font-size: 30px;
+	font-size: 38px;
 	border: solid 3px;
 	background-color: transparent;
-	position: relative;
 	width: 250px;
 	height: 60px;
-	padding: 0;
-	padding-top: 20px;
-	top: 42%;
+	padding: 5px;
+	top: 4%;
+	padding-top: 12px;
 	color: rgba(51, 195, 229, 1);
 	text-decoration: none;
 }
