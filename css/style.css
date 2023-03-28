@@ -2,41 +2,30 @@
 
 /* Formatação do Body */	
 body {
-	font-family: Arial; sans-serif;
-	background-color: rgba(29, 15, 54, 1);
-	color: rgba(0, 0, 0, 1);
-	padding: 0;
-	width: 100vw;
-	height: 100vh;
-	margin: 10px;
-}
-
-.container{
-	display: flex;
-	flex-direction: column;
-	background-color: black;
-	align-items: center;
-	width:100vw;
-	height: 100vh;
-	margin: 0;
-}
-
-.child1{
-	width:100vw;
-	height: 100vh;
-	background-color: rgba(29, 15, 54, 1);
-}
-
-.child2{	
-	width:100vw;
-	height: 100vh;
 	background-image: url(../fotossite/principal.png);
 	background-repeat: no repeat;
 	background-size: cover;
-	background-color: white;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+}
+/* Formatação do container principal */
+.container{
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	width:100vw;
+	height: 100vh;
 }
+
+.child1{
+	width:100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 
 /* Formatação do Menu */
 nav#menu {
@@ -51,23 +40,19 @@ nav#menu h1{
 /* Formatação da Posição na página da Lista do Menu */
 nav#menu ul{
 	list-style: none;
-	position: flex;
-	margin: auto;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
 	color: white;
 	font-size: 20px;	
 	font-weight: bold;
+	width: 35vw;
 }
 
 /* Formatação da cor e forma da Lista do Menu */
 nav#menu li{
 	display: inline-block;/* Lista em forma de fila*/
 	background-color: white;
-	padding: 25px;
-	margin: 2px;
-	transition: background-color 1s;
+	padding: 10px;
+	transition: 1s;
 	background-color: transparent;
 	text-transform: uppercase;
 }
@@ -88,17 +73,50 @@ nav#menu a:hover{
 	color: rgba(51, 195, 229, 1);
 }
 
-
-/* Formatação Logo do Site*/
-div#logomenor img{
+/* Formatação h1 Div Child2 */
+.lateral{
+	display: block;
 	position: absolute;
-	margin: auto;
-	top: 5px;
-	padding: 10px;
-	width: 200px;
-	height: 50px;
+	background-color: black;
+	text-align: center;
+	height: 100vh;
+	width: 7vw;
+	top: 0;
+}
+/* Formatação das imagens da Div Child2 */
+.lateral img#home{
+	position: relative;
+	margin: 15px 10px 10px 10px;
+	width: 55px;
 }
 
+
+/* Formatação das imagens da Div Child2 */
+.lateral img#git{
+	position: relative;
+	margin: 5px;
+	padding: 5px;
+	width: 30px;
+	top: 65vh;
+}
+
+/* Formatação das imagens da Div Child2 */
+.lateral img#linkedin{
+	position: relative;
+	margin: 5px;
+	padding: 5px;
+	width: 30px;
+	top: 65vh;
+}
+
+/* Formatação das imagens da Div Child2 */
+.lateral img#email{
+	position: relative;
+	margin: 5px;
+	padding: 5px;
+	width: 30px;
+	top: 65vh;
+}
 
 /* Formatação Img Div Imagem André */
 .child2 img{
@@ -108,27 +126,21 @@ div#logomenor img{
 	text-align: center;
 	position: relative;
 	margin: auto;
+	padding: 0;
 	height: 40vh;
 	width: 40vh;
-	top: 5%;
-	
 }	
 
 /* Formatação h1 Div Child2 */
 .child2 h1{
+	text-align: center;
 	font-family: HP Simplified; sans-serif;
 	font-size: 80px;
-	text-align: center;
 	color: rgba(51, 195, 229, 1);
 	text-transform: uppercase;
-	position: relative;
-	background-color: transparent;
-	margin: 0;
+	margin: auto;
 	margin-bottom: 0;
-	padding: 5px;
-	width: 100vw;
-	top: 5%;
-	
+	width: 70vw;
 }
 
 /* Formatação h2 Div Child2*/
@@ -137,13 +149,9 @@ div#logomenor img{
 	font-size: 60px;
 	text-align: center;
 	color: white;
-	position: relative;
-	padding: 5px;
-	margin: 5px;
-	background-color: transparent;
+	margin: auto;
 	margin-bottom: 0;
-	top: 4%;
-	width: 100vw;
+	width: 70vw;
 }
 
 /* Formatação h3 Div Principal*/
@@ -152,13 +160,11 @@ div#logomenor img{
 	font-size: 70px;
 	text-align: center;
 	color: rgba(51, 195, 229, 1);
-	background-color: transparent;
 	position: relative;
-	margin: 5px;
+	margin: auto;
 	margin-bottom: 0;
-	padding: 5px;
-	top: 3%;
-	width: 100vw;
+	padding: 0;
+	width: 70vw;
 }
 
 /* Formatação do a da Div Principal*/
@@ -171,15 +177,15 @@ div#logomenor img{
 	margin: auto;
 	font-family: Calibri; sans-serif;
 	font-size: 38px;
-	border: solid 3px;
+	border: 2px solid rgba(51, 195, 229, 1) ;
 	background-color: transparent;
-	width: 250px;
-	height: 60px;
-	padding: 5px;
-	top: 4%;
-	padding-top: 12px;
+	width: 300px;
+	height: 50px;
+	padding: 15px 30px;
+	border-radius: 30px;
 	color: rgba(51, 195, 229, 1);
 	text-decoration: none;
+	top: 10px;
 }
 
 /* Formatação Transição de Cor do a da Div Principal com link*/ 
