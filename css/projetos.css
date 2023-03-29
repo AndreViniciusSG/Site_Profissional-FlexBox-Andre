@@ -1,26 +1,52 @@
 @charset "UTF-8";
 
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/Bebas.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+/* Formatação para fonte */
+@font-face {
+    font-family: 'kgred';
+    src: url(../fonts/kgred.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+/* Formatação para fonte */
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url(../fonts/CaviarDreams.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
 /* Formatação do Body */	
 body {
-	font-family: Arial; sans-serif;
-	background-color: white;
-	color: rgba(0, 0, 0, 1);
+	background-image: url(../fotossite/principal.png);
+	background-repeat: no repeat;
+	background-size: cover;
 	padding: 0;
+	margin: 0;
 	width: 100vw;
 	height: 100vh;
-	margin: 0;
-	display: block;
 }
-
-/* Formatação da Div Interface */
-div#interface{
-	display: block;
-	width: 100wh;
+/* Formatação do container principal */
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100vw;
 	height: 100vh;
-	background-color: rgba(29, 15, 54, 1);
+}
+/* Formatação do container - div child1 */
+.child1{
+	width:100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
-}	
+}
+
 
 /* Formatação do Menu */
 nav#menu {
@@ -35,27 +61,30 @@ nav#menu h1{
 /* Formatação da Posição na página da Lista do Menu */
 nav#menu ul{
 	list-style: none;
-	position: absolute;
-	top: 10px;
-	left: 200px;
+	text-align: center;
 	color: white;
-	font-size: 15px;	
+	font-size: 15pt;	
+	font-weight: bold;
+	width: 35vw;
 }
 
 /* Formatação da cor e forma da Lista do Menu */
 nav#menu li{
+	font-family: Bebas;
+	font-weight: normal;
 	display: inline-block;/* Lista em forma de fila*/
 	background-color: white;
-	padding: 5px;
-	margin: 2px;
-	transition: background-color 1s;
+	padding: 10px;
 	background-color: transparent;
 	text-transform: uppercase;
 }
 
-/* Formatação da troca da cor da Lista do Menu */
+/* Formatação da troca da cor da Lista do Menu Sem Link*/
 nav#menu li:hover{
+	font-size: 20pt;
+	transition: 0.5s;
 	color: rgba(51, 195, 229, 1);
+	padding: 3px;
 }
 
 /* Formatação da troca da cor da Lista do Menu */
@@ -69,55 +98,264 @@ nav#menu a:hover{
 	color: rgba(51, 195, 229, 1);
 }
 
-/* Formatação Logo do Site*/
-div#logomenor img{
-	position: relative;
-	top: 10px;
-	margin: 5px;
-	padding-bottom: 10px;
-	width: 200px;
-	height: 50px;
-}
-
-/* Formatação Div Principal */
-div#principal{
+/* Formatação h1 Div Child2 */
+.lateral{
 	display: block;
-	width: 100vw;
+	position: absolute;
+	background-color: black;
+	text-align: center;
 	height: 100vh;
-	padding: 0;
-	margin: 0;
+	width: 7vw;
+	top: 0;
+}
+/* Formatação da imagem de home da Div Child2 */
+.lateral img#home{
 	position: relative;
-	background-image: url(../layout/principal.png);
-	background-repeat: no repeat;
-	background-size: cover;
-	top: -47px;
+	margin: 15px 10px 10px 10px;
+	width: 55px;
+	opacity: 0.5;
+}
+/* Formatação da imagem de home da Div Child2 ao passar o mouse*/
+.lateral img#home:hover{
+	margin: 15px 10px 5px 10px;
+	width: 60px;
+	transition: 0.5s;
+	opacity: 1;
 }
 
-/* Formatação h1 Div Principal */
-div#principal h1{
-	font-family: HP Simplified; sans-serif;
-	font-size: 70px;
+/* Formatação das imagens da Div Child2 */
+.lateral img#git{
+	position: relative;
+	margin: 5px;
+	padding: 5px;
+	width: 30px;
+	top: 65vh;
+	opacity: 0.2;
+}
+/* Formatação das imagens da Div Child2 */
+.lateral img#git:hover{
+	opacity: 1;
+	transition: 0.5s;
+}
+
+/* Formatação das imagens da Div Child2 */
+.lateral img#linkedin{
+	position: relative;
+	margin: 5px;
+	padding: 5px;
+	width: 30px;
+	top: 65vh;
+	opacity: 0.2;
+}
+
+/* Formatação das imagens da Div Child2 */
+.lateral img#email{
+	position: relative;
+	margin: 5px;
+	padding: 5px;
+	width: 30px;
+	top: 65vh;
+	opacity: 0.2;
+}
+
+/* Formatação h1 Div Child2 */
+.child2 h1{
+	font-family: kgred;
+	font-weight: normal;
+	font-size: 15pt;
+	text-align: center;
+	color: rgba(51, 195, 229, 1);
+	text-transform: uppercase;
+	margin: auto;
+	margin-bottom: 0;
+	width: 70vw;
+	padding: 15px 0px 0px 0px;
+}
+
+/* Formatação h2 Div Child2*/
+.child2 h2{
+	font-family: kgred;
+	font-weight: normal;
+	font-size: 50pt;
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-bottom: 0;
+	width: 70vw;
+}
+
+/* Formatação h3 Div Principal*/
+.child2 h3{
+	font-family: Bebas;
+	font-weight: normal;
+	font-size: 30pt;
 	text-align: center;
 	color: rgba(51, 195, 229, 1);
 	position: relative;
-	background-color: transparent;
-	margin-bottom:0;
-	padding: 10px;
-	width: 100vw;
-	top: 50px;
-	
+	margin: auto;
+	margin-bottom: 0;
+	padding: 0;
+	width: 70vw;
 }
-
-/* Formatação h2 Div Principal */
-div#principal h2{
-	font-family: Calibri Light; sans-serif;
-	font-size: 35px;
-	text-align: center;
+.child2 p{
+	font-family: CaviarDreams;
+	font-weight: normal;
+	font-size: 15pt;
+	text-align: justify;
 	color: white;
 	position: relative;
-	background-color: transparent;
 	margin: auto;
-	top: 50px;
-	padding: 10px;
-	width: 100vw;
+	margin-bottom: 0;
+	padding: 20px;
+	width: 70vw;
+	text-indent: 30px;
+}
+
+/* Formatação do a da Div Principal*/
+.child2 a{
+	display: block;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: CaviarDreams;
+	font-weight: bold;
+	font-size: 20pt;
+	margin: auto;
+	border: 2px solid rgba(51, 195, 229, 1) ;
+	background-color: transparent;
+	width: 300px;
+	height: 35px;
+	padding: 15px 30px;
+	border-radius: 30px;
+	color: rgba(51, 195, 229, 1);
+	text-decoration: none;
+	top: 15px;
+}
+
+/* Formatação Transição de Cor do a da Div Principal com link*/ 
+.child2 a:hover{
+	color: black;
+	background-color: rgba(51, 195, 229, 1);
+	border: solid 3px;
+	border-color: rgba(51, 195, 229, 1);
+	
+}	
+
+/* Formatação ao diminuir a tela para uso mobile*/	
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+	body{
+		background-image: url(../fotossite/mobileback.png);
+		background-repeat: no repeat;
+		background-size: cover;
+	}
+	/* Formatação da Posição na página da Lista do Menu */
+	nav#menu ul{
+		list-style: none;
+		text-align: center;
+		color: white;
+		font-size: 50pt;	
+		font-weight: bold;
+		width: 85vw;
+		margin: 10px;
+	}
+	/* Formatação da cor e forma da Lista do Menu */
+	nav#menu li{
+		font-family: Bebas;
+		font-weight: normal;
+		display: inline-block;/* Lista em forma de fila*/
+		background-color: white;
+		padding: 10px;
+		background-color: transparent;
+		text-transform: uppercase;
+	}
+	/* Formatação da troca da cor da Lista do Menu Sem Link*/
+	nav#menu li:hover{
+		font-size: 50pt;
+		color: rgba(51, 195, 229, 1);
+		padding: 10px;
+	}
+	/* Formatação h1 Div Child2 */
+	.lateral{
+		display: block;
+		position: absolute;
+		background-color: black;
+		text-align: center;
+		height: 100vh;
+		width: 12vw;
+		top: 0;
+	}
+	/* Formatação da imagem de home da Div Child2 */
+	.lateral img#home{
+		position: relative;
+		margin: 15px 10px 10px 10px;
+		width: 85px;
+		opacity: 1;
+	}
+	/* Formatação da imagem de home da Div Child2 ao passar o mouse*/
+	.lateral img#home:hover{
+		margin: 15px 10px 10px 10px;
+		width: 85px;
+	}
+
+	/* Formatação das imagens da Div Child2 */
+	.lateral img#git{
+		position: relative;
+		margin: 10px;
+		padding: 10px;
+		width: 60px;
+		top: 65vh;
+	}
+	/* Formatação das imagens da Div Child2 */
+	.lateral img#linkedin{
+		position: relative;
+		margin: 10px;
+		padding: 10px;
+		width: 60px;
+		top: 65vh;
+	}
+	/* Formatação das imagens da Div Child2 */
+	.lateral img#email{
+		position: relative;
+		margin: 10px;
+		padding: 10px;
+		width: 60px;
+		top: 65vh;
+	}
+	/* Formatação Img Div Imagem André */
+	.child2 img{
+		padding: 150px 150px 50px 230px;
+		height: 30vh;
+		width: 30vh;
+	}	
+	/* Formatação h1 Div Child2 */
+	.child2 h1{
+		font-size: 20pt;
+		width: 70vw;
+		padding: 0px 0px 0px 100px;
+	}
+	/* Formatação h2 Div Child2*/
+	.child2 h2{
+		font-size: 60pt;
+		width: 70vw;
+		padding: 0px 0px 0px 100px;
+	}
+	/* Formatação h3 Div Principal*/
+	.child2 h3{
+		font-size: 30pt;
+		color: rgba(51, 195, 229, 1);
+		padding: 0px 0px 0px 100px;
+		width: 90vw;
+	}
+	/* Formatação do a da Div Principal*/
+	.child2 a{
+		margin: 50px 0px 0px 250px;
+		font-size: 50pt;
+		text-align: center;
+		width: 500px;
+		height: 100px;
+		padding: 50px;
+		border-radius: 100px;
+	}
+
 }
