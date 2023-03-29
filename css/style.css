@@ -269,6 +269,12 @@ nav#menu a:hover{
 		background-color: transparent;
 		text-transform: uppercase;
 	}
+	/* Formatação da troca da cor da Lista do Menu Sem Link*/
+	nav#menu li:hover{
+		font-size: 50pt;
+		color: rgba(51, 195, 229, 1);
+		padding: 10px;
+	}
 	/* Formatação h1 Div Child2 */
 	.lateral{
 		display: block;
