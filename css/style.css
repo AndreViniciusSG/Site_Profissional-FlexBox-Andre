@@ -1,5 +1,26 @@
 @charset "UTF-8";
 
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Bebas';
+    src: url(../fonts/Bebas.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+/* Formatação para fonte */
+@font-face {
+    font-family: 'kgred';
+    src: url(../fonts/kgred.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+/* Formatação para fonte */
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url(../fonts/CaviarDreams.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
 /* Formatação do Body */	
 body {
 	background-image: url(../fotossite/principal.png);
@@ -18,7 +39,7 @@ body {
 	width:100vw;
 	height: 100vh;
 }
-
+/* Formatação do container - div child1 */
 .child1{
 	width:100%;
 	height: 100%;
@@ -42,24 +63,28 @@ nav#menu ul{
 	list-style: none;
 	text-align: center;
 	color: white;
-	font-size: 20px;	
+	font-size: 15pt;	
 	font-weight: bold;
 	width: 35vw;
 }
 
 /* Formatação da cor e forma da Lista do Menu */
 nav#menu li{
+	font-family: Bebas;
+	font-weight: normal;
 	display: inline-block;/* Lista em forma de fila*/
 	background-color: white;
 	padding: 10px;
-	transition: 1s;
 	background-color: transparent;
 	text-transform: uppercase;
 }
 
 /* Formatação da troca da cor da Lista do Menu Sem Link*/
 nav#menu li:hover{
+	font-size: 20pt;
+	transition: 0.5s;
 	color: rgba(51, 195, 229, 1);
+	padding: 3px;
 }
 
 /* Formatação da troca da cor da Lista do Menu */
@@ -83,13 +108,20 @@ nav#menu a:hover{
 	width: 7vw;
 	top: 0;
 }
-/* Formatação das imagens da Div Child2 */
+/* Formatação da imagem de home da Div Child2 */
 .lateral img#home{
 	position: relative;
 	margin: 15px 10px 10px 10px;
 	width: 55px;
+	opacity: 0.5;
 }
-
+/* Formatação da imagem de home da Div Child2 ao passar o mouse*/
+.lateral img#home:hover{
+	margin: 15px 10px 5px 10px;
+	width: 60px;
+	transition: 0.5s;
+	opacity: 1;
+}
 
 /* Formatação das imagens da Div Child2 */
 .lateral img#git{
@@ -98,6 +130,12 @@ nav#menu a:hover{
 	padding: 5px;
 	width: 30px;
 	top: 65vh;
+	opacity: 0.2;
+}
+/* Formatação das imagens da Div Child2 */
+.lateral img#git:hover{
+	opacity: 1;
+	transition: 0.5s;
 }
 
 /* Formatação das imagens da Div Child2 */
@@ -107,6 +145,7 @@ nav#menu a:hover{
 	padding: 5px;
 	width: 30px;
 	top: 65vh;
+	opacity: 0.2;
 }
 
 /* Formatação das imagens da Div Child2 */
@@ -116,6 +155,7 @@ nav#menu a:hover{
 	padding: 5px;
 	width: 30px;
 	top: 65vh;
+	opacity: 0.2;
 }
 
 /* Formatação Img Div Imagem André */
@@ -133,20 +173,23 @@ nav#menu a:hover{
 
 /* Formatação h1 Div Child2 */
 .child2 h1{
+	font-family: kgred;
+	font-weight: normal;
+	font-size: 20pt;
 	text-align: center;
-	font-family: HP Simplified; sans-serif;
-	font-size: 80px;
 	color: rgba(51, 195, 229, 1);
 	text-transform: uppercase;
 	margin: auto;
 	margin-bottom: 0;
 	width: 70vw;
+	padding: 15px 0px 0px 0px;
 }
 
 /* Formatação h2 Div Child2*/
 .child2 h2{
-	font-family: Calibri Light; sans-serif;
-	font-size: 60px;
+	font-family: kgred;
+	font-weight: normal;
+	font-size: 50pt;
 	text-align: center;
 	color: white;
 	margin: auto;
@@ -156,8 +199,9 @@ nav#menu a:hover{
 
 /* Formatação h3 Div Principal*/
 .child2 h3{
-	font-family: HP Simplified; sans-serif;
-	font-size: 70px;
+	font-family: Bebas;
+	font-weight: normal;
+	font-size: 30pt;
 	text-align: center;
 	color: rgba(51, 195, 229, 1);
 	position: relative;
@@ -174,18 +218,19 @@ nav#menu a:hover{
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	font-family: CaviarDreams;
+	font-weight: bold;
+	font-size: 20pt;
 	margin: auto;
-	font-family: Calibri; sans-serif;
-	font-size: 38px;
 	border: 2px solid rgba(51, 195, 229, 1) ;
 	background-color: transparent;
 	width: 300px;
-	height: 50px;
+	height: 35px;
 	padding: 15px 30px;
 	border-radius: 30px;
 	color: rgba(51, 195, 229, 1);
 	text-decoration: none;
-	top: 10px;
+	top: 15px;
 }
 
 /* Formatação Transição de Cor do a da Div Principal com link*/ 
