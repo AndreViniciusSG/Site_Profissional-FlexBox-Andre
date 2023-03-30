@@ -23,7 +23,7 @@
 }
 /* Formatação do Body */	
 body {
-	background-image: url(../fotossite/principal.png);
+	background-image: url(../fotossite/principal3.png);
 	background-repeat: no repeat;
 	background-size: cover;
 	padding: 0;
@@ -169,7 +169,7 @@ nav#menu a:hover{
 	margin: auto;
 	margin-bottom: 0;
 	width: 70vw;
-	padding: 15px 0px 0px 0px;
+	padding: 100px 0px 0px 0px;
 }
 
 /* Formatação h2 Div Child2*/
@@ -206,31 +206,9 @@ nav#menu a:hover{
 	position: relative;
 	margin: auto;
 	margin-bottom: 0;
-	padding: 20px;
+	padding:20px;
 	width: 70vw;
 	text-indent: 30px;
-}
-
-/* Formatação do a da Div Principal*/
-.child2 a{
-	display: block;
-	position: relative;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	font-family: CaviarDreams;
-	font-weight: bold;
-	font-size: 20pt;
-	margin: auto;
-	border: 2px solid rgba(51, 195, 229, 1) ;
-	background-color: transparent;
-	width: 300px;
-	height: 35px;
-	padding: 15px 30px;
-	border-radius: 30px;
-	color: rgba(51, 195, 229, 1);
-	text-decoration: none;
-	top: 15px;
 }
 
 /* Formatação Transição de Cor do a da Div Principal com link*/ 

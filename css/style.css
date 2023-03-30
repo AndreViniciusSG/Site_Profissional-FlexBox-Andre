@@ -23,7 +23,7 @@
 }
 /* Formatação do Body */	
 body {
-	background-image: url(../fotossite/principal.png);
+	background-image: url(../fotossite/principal4.png);
 	background-repeat: no repeat;
 	background-size: cover;
 	padding: 0;
@@ -245,7 +245,7 @@ nav#menu a:hover{
 /* Formatação ao diminuir a tela para uso mobile*/	
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
 	body{
-		background-image: url(../fotossite/mobileback.png);
+		background-image: url(../fotossite/mobile2.png);
 		background-repeat: no repeat;
 		background-size: cover;
 	}
