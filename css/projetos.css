@@ -23,7 +23,7 @@
 }
 /* Formatação do Body */	
 body {
-	background-image: url(../fotossite/principal.png);
+	background-image: url(../fotossite/principal4.png);
 	background-repeat: no repeat;
 	background-size: cover;
 	padding: 0;
@@ -111,7 +111,7 @@ nav#menu a:hover{
 /* Formatação da imagem de home da Div Child2 */
 .lateral img#home{
 	position: relative;
-	margin: 15px 10px 10px 10px;
+	margin: 15px 10px 10px 5px;
 	width: 55px;
 	opacity: 0.5;
 }
@@ -129,7 +129,7 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 /* Formatação das imagens da Div Child2 */
@@ -144,7 +144,7 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 
@@ -154,7 +154,7 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 
@@ -169,7 +169,7 @@ nav#menu a:hover{
 	margin: auto;
 	margin-bottom: 0;
 	width: 70vw;
-	padding: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 /* Formatação p Div Child2 */
 .child2 p{
@@ -181,7 +181,7 @@ nav#menu a:hover{
 	position: relative;
 	margin: auto;
 	margin-bottom: 0;
-	padding:20px;
+	padding:10px;
 	width: 70vw;
 	text-indent: 30px;
 }
@@ -202,8 +202,8 @@ nav#menu a:hover{
 	flex-wrap: wrap;
 	flex-direction: row;
 	margin: auto;
-	width: 70vw;
-	height: 60vh;
+	width: 60vw;
+	height: 50vh;
 	padding: 0;
 }
 
@@ -214,17 +214,17 @@ nav#menu a:hover{
 }
 
 .projetos a{
-	width: 320px;
-	height: 200px;
-	margin: 0px 20px 0px 20px;
-	padding: 0;
+	width: 260px;
+	height: 140px;
+	margin: 10px 20px 20px 20px;
 	text-align: center;
+	padding:5px;
 }
 
 .projetos a:hover{
-	width: 370px;
-	height: 240px;
-	margin: 5px 5px 5px 5px;
+	width: 280px;
+	height: 160px;
+	margin: 0px 10px 0px 10px;
 	transition: 0.5s;
 	border: solid 5px white;
 }

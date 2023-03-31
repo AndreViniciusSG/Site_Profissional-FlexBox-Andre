@@ -23,7 +23,7 @@
 }
 /* Formatação do Body */	
 body {
-	background-image: url(../fotossite/principal3.png);
+	background-image: url(../fotossite/principal4.png);
 	background-repeat: no repeat;
 	background-size: cover;
 	padding: 0;
@@ -111,7 +111,7 @@ nav#menu a:hover{
 /* Formatação da imagem de home da Div Child2 */
 .lateral img#home{
 	position: relative;
-	margin: 15px 10px 10px 10px;
+	margin: 15px 10px 10px 5px;
 	width: 55px;
 	opacity: 0.5;
 }
@@ -129,7 +129,7 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 /* Formatação das imagens da Div Child2 */
@@ -144,7 +144,7 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 
@@ -154,26 +154,12 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 
-/* Formatação h1 Div Child2 */
+/* Formatação h1 Div Child2*/
 .child2 h1{
-	font-family: kgred;
-	font-weight: normal;
-	font-size: 15pt;
-	text-align: center;
-	color: rgba(51, 195, 229, 1);
-	text-transform: uppercase;
-	margin: auto;
-	margin-bottom: 0;
-	width: 70vw;
-	padding: 100px 0px 0px 0px;
-}
-
-/* Formatação h2 Div Child2*/
-.child2 h2{
 	font-family: kgred;
 	font-weight: normal;
 	font-size: 50pt;
@@ -182,10 +168,11 @@ nav#menu a:hover{
 	margin: auto;
 	margin-bottom: 0;
 	width: 70vw;
+	padding: 50px 0px 0px 0px;
 }
 
-/* Formatação h3 Div Principal*/
-.child2 h3{
+/* Formatação h2 Div Principal*/
+.child2 h2{
 	font-family: Bebas;
 	font-weight: normal;
 	font-size: 30pt;

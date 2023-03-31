@@ -21,6 +21,14 @@
     font-weight: normal;
     font-display: swap;
 }
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Biko';
+    src: url(../fonts/Biko.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
 /* Formatação do Body */	
 body {
 	background-image: url(../fotossite/principal2.png);
@@ -111,7 +119,7 @@ nav#menu a:hover{
 /* Formatação da imagem de home da Div Child2 */
 .lateral img#home{
 	position: relative;
-	margin: 15px 10px 10px 10px;
+	margin: 15px 10px 10px 5px;
 	width: 55px;
 	opacity: 0.5;
 }
@@ -129,7 +137,7 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 /* Formatação das imagens da Div Child2 */
@@ -144,7 +152,7 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 
@@ -154,93 +162,93 @@ nav#menu a:hover{
 	margin: 5px;
 	padding: 5px;
 	width: 30px;
-	top: 65vh;
+	top: 50vh;
 	opacity: 0.2;
 }
 
 /* Formatação h1 Div Child2 */
+
+/* Formatação h1 Div Child2*/
 .child2 h1{
 	font-family: kgred;
 	font-weight: normal;
-	font-size: 15pt;
+	font-size: 30pt;
 	text-align: center;
 	color: rgba(51, 195, 229, 1);
 	text-transform: uppercase;
 	margin: auto;
 	margin-bottom: 0;
 	width: 70vw;
-	padding: 15px 0px 0px 0px;
+	padding: 0px 0px 20px 0px;
 }
 
-/* Formatação h2 Div Child2*/
-.child2 h2{
-	font-family: kgred;
-	font-weight: normal;
-	font-size: 50pt;
-	text-align: center;
-	color: white;
+/* Formatação da div form*/	
+.form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: auto;
-	margin-bottom: 0;
-	width: 70vw;
+	width: 40vw;
+	height: 65vh;
+	padding: 10px 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: rgba(51, 195, 229, 0.35) 0px 5px 15px;
 }
-
-/* Formatação h3 Div Principal*/
-.child2 h3{
+/* Formatação do formulário*/	
+.form form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+/* Formatação do label*/
+form label{
+	color: rgba(51, 195, 229, 1);
+	font-size: 15pt;
 	font-family: Bebas;
 	font-weight: normal;
-	font-size: 30pt;
-	text-align: center;
-	color: rgba(51, 195, 229, 1);
-	position: relative;
-	margin: auto;
-	margin-bottom: 0;
-	padding: 0;
-	width: 70vw;
+	padding: 5px;
 }
-.child2 p{
-	font-family: CaviarDreams;
-	font-weight: normal;
-	font-size: 15pt;
-	text-align: justify;
-	color: white;
-	position: relative;
-	margin: auto;
-	margin-bottom: 0;
-	padding: 20px;
-	width: 70vw;
-	text-indent: 30px;
-}
-
-/* Formatação do a da Div Principal*/
-.child2 a{
-	display: block;
-	position: relative;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	font-family: CaviarDreams;
-	font-weight: bold;
-	font-size: 20pt;
-	margin: auto;
-	border: 2px solid rgba(51, 195, 229, 1) ;
-	background-color: transparent;
-	width: 300px;
-	height: 35px;
-	padding: 15px 30px;
-	border-radius: 30px;
-	color: rgba(51, 195, 229, 1);
-	text-decoration: none;
-	top: 15px;
-}
-
-/* Formatação Transição de Cor do a da Div Principal com link*/ 
-.child2 a:hover{
+/* Formatação do input*/
+form input{
 	color: black;
+	font-size: 15pt;
+	font-family: Biko;
+	font-weight: normal;
+	padding: 5px;
+}
+/* Formatação do textarea*/
+form textarea{
+	color: black;
+	font-size: 10pt;
+	font-family: Biko;
+	font-weight: normal;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+/* Formatação do button*/
+form button{
+	color: rgba(51, 195, 229, 1);
+	font-size: 10pt;
+	font-family: Bebas;
+	font-weight: normal;
+	background-color: transparent;
+	padding: 10px;
+	width: 200px;
+	text-align: center;
+	cursor: pointer;
+	border: 2px solid rgba(51, 195, 229, 1);
+	transition: 1s;
+	margin: auto;
+	letter-spacing: 2px;
+}
+/* Formatação do button*/
+form button:hover{
 	background-color: rgba(51, 195, 229, 1);
-	border: solid 3px;
-	border-color: rgba(51, 195, 229, 1);
-	
-}	
+	color: white;
+	transition: 0.5s;
+	border-radius: 20px;
+	letter-spacing: 5px;
+}
 
 /* Formatação ao diminuir a tela para uso mobile*/	
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
