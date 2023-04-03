@@ -31,7 +31,7 @@
 }
 /* Formatação do Body */	
 body {
-	background-image: url(../fotossite/principal2.png);
+	background-image: url(../fotossite/background1.png);
 	background-repeat: no repeat;
 	background-size: cover;
 	padding: 0;
@@ -112,9 +112,10 @@ nav#menu a:hover{
 	position: absolute;
 	background-color: black;
 	text-align: center;
-	height: 100vh;
+	height: 100%;
 	width: 7vw;
 	top: 0;
+	box-shadow: rgba(51, 195, 229, 1) 0px 10px 36px 0px, rgba(51, 195, 229, 1) 0px 0px 0px 1px;
 }
 /* Formatação da imagem de home da Div Child2 */
 .lateral img#home{
