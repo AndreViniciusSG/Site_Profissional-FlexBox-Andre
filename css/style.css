@@ -133,7 +133,7 @@ nav#menu a:hover{
 	top: 50vh;
 	opacity: 0.2;
 }
-/* Formatação das imagens da Div Child2 */
+/* Formatação da imagem git ao passar o mouse */
 .lateral img#git:hover{
 	opacity: 1;
 	transition: 0.5s;
@@ -149,6 +149,12 @@ nav#menu a:hover{
 	opacity: 0.2;
 }
 
+/* Formatação da imagem linkedin ao passar o mouse */
+.lateral img#linkedin:hover{
+	opacity: 1;
+	transition: 0.5s;
+}
+
 /* Formatação das imagens da Div Child2 */
 .lateral img#email{
 	position: relative;
@@ -159,6 +165,11 @@ nav#menu a:hover{
 	opacity: 0.2;
 }
 
+/* Formatação da imagem email ao passar o mouse */
+.lateral img#email:hover{
+	opacity: 1;
+	transition: 0.5s;
+}
 /* Formatação Img Div Imagem André */
 .child2 img{
 	align-items: center;
@@ -227,7 +238,7 @@ nav#menu a:hover{
 	background-color: transparent;
 	width: 300px;
 	height: 35px;
-	padding: 15px 30px;
+	padding: 5px 10px;
 	border-radius: 30px;
 	color: rgba(51, 195, 229, 1);
 	text-decoration: none;

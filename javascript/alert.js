@@ -3,5 +3,6 @@ function alerta(){
   title: "Mensagem enviada!",
   text: "Em breve retornarei o seu contato, desde já agradeço!",
   icon: "success",
-});
+
+}5000);
 }

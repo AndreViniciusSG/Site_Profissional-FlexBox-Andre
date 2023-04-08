@@ -149,6 +149,12 @@ nav#menu a:hover{
 	opacity: 0.2;
 }
 
+/* Formatação da imagem linkedin ao passar o mouse */
+.lateral img#linkedin:hover{
+	opacity: 1;
+	transition: 0.5s;
+}
+
 /* Formatação das imagens da Div Child2 */
 .lateral img#email{
 	position: relative;
@@ -157,6 +163,12 @@ nav#menu a:hover{
 	width: 30px;
 	top: 50vh;
 	opacity: 0.2;
+}
+
+/* Formatação da imagem email ao passar o mouse */
+.lateral img#email:hover{
+	opacity: 1;
+	transition: 0.5s;
 }
 
 /* Formatação h1 Div Child2*/
