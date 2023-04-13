@@ -47,7 +47,6 @@ body {
 	padding: 0;
 }
 
-
 /* Formatação do Menu */
 nav#menu {
 	display: block;
@@ -63,28 +62,28 @@ nav#menu ul{
 	list-style: none;
 	text-align: center;
 	color: white;
-	font-size: 15pt;	
 	font-weight: bold;
 	width: 35vw;
+	padding: 10px;
 }
 
 /* Formatação da cor e forma da Lista do Menu */
 nav#menu li{
 	font-family: Bebas;
 	font-weight: normal;
+	font-size: 15pt;
 	display: inline-block;/* Lista em forma de fila*/
 	background-color: white;
-	padding: 10px;
 	background-color: transparent;
+	margin: 5px;
 	text-transform: uppercase;
 }
 
 /* Formatação da troca da cor da Lista do Menu Sem Link*/
 nav#menu li:hover{
-	font-size: 20pt;
+	text-decoration: underline;
 	transition: 0.5s;
 	color: rgba(51, 195, 229, 1);
-	padding: 3px;
 }
 
 /* Formatação da troca da cor da Lista do Menu */
@@ -98,39 +97,33 @@ nav#menu a:hover{
 	color: rgba(51, 195, 229, 1);
 }
 
-/* Formatação h1 Div Child2 */
+/* Formatação da div lateral */
 .lateral{
 	display: block;
 	position: absolute;
 	background-color: black;
 	text-align: center;
+	align-items: center;
 	height: 100%;
 	width: 7vw;
 	top: 0;
-	box-shadow: rgba(51, 195, 229, 1) 0px 10px 36px 0px, rgba(51, 195, 229, 1) 0px 0px 0px 1px;
-}
-/* Formatação da imagem de home da Div Child2 */
-.lateral img#home{
-	position: relative;
-	margin: 15px 10px 10px 5px;
-	width: 55px;
-	opacity: 0.5;
-}
-/* Formatação da imagem de home da Div Child2 ao passar o mouse*/
-.lateral img#home:hover{
-	margin: 15px 10px 5px 10px;
-	width: 60px;
-	transition: 0.5s;
-	opacity: 1;
+	box-shadow: rgba(254, 254, 254, 1) 0px 10px 36px 0px, rgba(254, 254, 254, 1) 0px 0px 0px 1px;
 }
 
-/* Formatação das imagens da Div Child2 */
-.lateral img#git{
+/* Formatação da tag a da div lateral */
+.lateral a{
+	display: block;
 	position: relative;
-	margin: 5px;
-	padding: 5px;
-	width: 30px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 15px;
 	top: 50vh;
+	width: 30px;
+}
+
+/* Formatação da imagem git da da div lateral */
+.lateral img#git{
+	width: 30px;
 	opacity: 0.2;
 }
 /* Formatação da imagem git ao passar o mouse */
@@ -139,13 +132,9 @@ nav#menu a:hover{
 	transition: 0.5s;
 }
 
-/* Formatação das imagens da Div Child2 */
+/* Formatação da imagem linkedin da div lateral */
 .lateral img#linkedin{
-	position: relative;
-	margin: 5px;
-	padding: 5px;
 	width: 30px;
-	top: 50vh;
 	opacity: 0.2;
 }
 
@@ -155,13 +144,9 @@ nav#menu a:hover{
 	transition: 0.5s;
 }
 
-/* Formatação das imagens da Div Child2 */
+/* Formatação daa imagem email da div lateral */
 .lateral img#email{
-	position: relative;
-	margin: 5px;
-	padding: 5px;
 	width: 30px;
-	top: 50vh;
 	opacity: 0.2;
 }
 
@@ -169,6 +154,9 @@ nav#menu a:hover{
 .lateral img#email:hover{
 	opacity: 1;
 	transition: 0.5s;
+}
+.child2{
+	height: 80vh;
 }
 /* Formatação Img Div Imagem André */
 .child2 img{
